@@ -35,7 +35,8 @@ public class Point {
         this.y = y;
     }
 
-    public void displayState() {
-        System.out.println("(" + this.x + ", " + this.y + ")");
+    @Override
+    public String toString() {
+    return "(" + this.x + ", " + this.y + ")";
     }
 }
