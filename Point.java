@@ -3,20 +3,24 @@ public class Point {
 
     private double x;
     private double y;
+    private static int objectCount = 0;
 
     public Point() {
         this.x = 0;
         this.y = 0;
+        objectCount++;
     }
     
     public Point(double x, double y) {
         this.x = x;
         this.y = y;
+        objectCount++;
     }
     
     public Point(Point other) {
         this.x = other.x;
         this.y = other.y;
+        objectCount++;
     }
 
     public double getX() {
@@ -34,9 +38,12 @@ public class Point {
     public void setY(double y) {
         this.y = y;
     }
+    public static int getObjectCount() {
+        return objectCount;
+    }
 
     @Override
     public String toString() {
-    return "(" + this.x + ", " + this.y + ")";
+    return "(" + this.x + ", " + this.y + ") | Total Points: " + objectCount;
     }
 }
