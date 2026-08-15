@@ -1,0 +1,33 @@
+--- t1 (3-4-5 triangle) ---
+P1: (0.0, 0.0)
+P2: (4.0, 0.0)
+P3: (0.0, 3.0)
+Perimeter : 12.0
+Area      : 6.0
+Valid     : true
+
+--- t2 (default, all points at origin) ---
+P1: (0.0, 0.0)
+P2: (0.0, 0.0)
+P3: (0.0, 0.0)
+Perimeter : 0.0
+Area      : 0.0
+Valid     : false
+
+--- after changing the ORIGINAL point 'a' ---
+t1 (uses its own copy of a's old value):
+P1: (0.0, 0.0)
+P2: (4.0, 0.0)
+P3: (0.0, 3.0)
+Perimeter : 12.0
+Area      : 6.0
+Valid     : true
+
+t3 (copy of t1, also unaffected by the change to a):
+P1: (0.0, 0.0)
+P2: (4.0, 0.0)
+P3: (0.0, 3.0)
+Perimeter : 12.0
+Area      : 6.0
+Valid     : true
+
