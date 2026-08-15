@@ -50,10 +50,11 @@ public class Triangle {
        this.p3 = new Point(p3);
     }
 
-    @Override
+   @Override
     public String toString() {
-        return "P1: (" + p1.getX() + ", " + p1.getY() + ")\n" +
-               "P2: (" + p2.getX() + ", " + p2.getY() + ")\n" +
-               "P3: (" + p3.getX() + ", " + p3.getY() + ")";
+       return "P1: (" + p1.getX() + ", " + p1.getY() + ")\n" +
+              "P2: (" + p2.getX() + ", " + p2.getY() + ")\n" +
+              "P3: (" + p3.getX() + ", " + p3.getY() + ")\n" +
+              "Total Triangles: " + objectCount;
     }
 }
