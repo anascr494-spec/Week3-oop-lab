@@ -49,6 +49,9 @@ public class Triangle {
     public void setP3(Point p3) {
        this.p3 = new Point(p3);
     }
+     public static int getObjectCount() {
+        return objectCount;
+    }
 
    @Override
     public String toString() {
