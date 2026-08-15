@@ -11,7 +11,7 @@ public class Main {
         System.out.println(t1);
 
         Triangle t2 = new Triangle();
-        System.out.println("\n--- t2 (default) ---");
+        System.out.println("\n--- t2 ---");
         System.out.println(t2);
 
         Triangle t3 = new Triangle(t1);
